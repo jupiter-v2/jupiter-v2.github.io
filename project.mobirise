@@ -1,0 +1,159 @@
+{
+  "settings": {
+    "name": "jupiter",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1c2936"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13",
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/jupiter-96x96.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://jupiter-v2.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://jupiter-v2.github.io/sitemap.xml\n",
+    "mbrsiteDomain": "uwvxwducsj",
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Jupiter Swap | Solana",
+        "meta_descr": "Jupiter Swap is one of the largest decentralized trading platform and one of the most active governance community in crypto. We're building the everything exchange for everyone.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://jupiter.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/jupiter-3554x1979.png\" alt=\"Jupiter Swap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "utOyfGzGSm",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1c2936\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1c2936\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Jupiter Swap: Revolutionizing Cross-Chain Swaps in DeFi</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the rapidly evolving world of decentralized finance (DeFi), the need for seamless and efficient asset transfers across multiple blockchain networks has never been more critical. Enter <a href=\"https://jupiter-v2.github.io/\" class=\"text-primary\"><b>Jupiter Swap</b></a>, a decentralized exchange (DEX) built on the Solana blockchain that is designed to facilitate cross-chain swaps and enhance liquidity in the DeFi ecosystem. In this blog, we will explore the mechanics, features, and impact of Jupiter Swap, shedding light on how it is shaping the future of cross-chain transactions.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Jupiter Swap?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://jup.ag/\" class=\"text-primary\">Jupiter Swap</a> is a decentralized exchange protocol that specializes in cross-chain asset swaps. Operating primarily on the Solana blockchain, Jupiter enables users to trade various cryptocurrencies across different blockchain networks without the need for centralized intermediaries. By leveraging advanced technologies and unique liquidity mechanisms, Jupiter Swap aims to provide a user-friendly and efficient trading experience.<br><br><b>Key Features of Jupiter Swap</b><br><b>Cross-Chain Swaps:</b> Jupiter Swap allows users to swap assets from one blockchain to another seamlessly, facilitating greater interoperability within the DeFi ecosystem.<br><b>High Speed and Low Fees:</b> Built on Solana, Jupiter Swap benefits from the blockchain's high throughput and low transaction costs, making it an attractive option for traders.<br><b>Liquidity Aggregation:</b> Jupiter Swap aggregates liquidity from multiple sources, ensuring users get the best possible prices for their trades.<br><b>User-Friendly Interface:</b> The platform features an intuitive design that caters to both novice and experienced users, simplifying the trading process.<br><b>Governance and Community Engagement:</b> Jupiter Swap incorporates community governance features, allowing users to participate in decision-making processes related to the platform's development and future.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Evolution of Jupiter Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. The Need for Cross-Chain Solutions</b><br>As the DeFi space has expanded, so too has the number of blockchain networks and the assets they host. However, this diversification has led to fragmentation, with users often facing challenges in trading assets across different chains. Recognizing this gap, the developers of Jupiter Swap set out to create a solution that would enhance liquidity and facilitate easier transactions between disparate ecosystems.<br><br><b>2. The Rise of Solana</b><br>The selection of Solana as the underlying blockchain for Jupiter Swap was strategic. Known for its high-speed processing capabilities and low transaction fees, Solana has emerged as a leading platform for DeFi applications. Jupiter Swap capitalizes on these advantages, providing users with a fast and cost-effective trading experience.<br><br><b>3. Launch and Community Growth</b><br>Since its launch, Jupiter Swap has rapidly gained traction within the DeFi community. Its unique offerings and user-centric approach have attracted a diverse user base, from retail traders to institutional investors. The platform's commitment to community governance has further fostered engagement and loyalty among its users.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Jupiter Swap Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Cross-Chain Swaps Explained</b><br>At its core, Jupiter Swap leverages liquidity pools and automated market-making (AMM) algorithms to facilitate cross-chain swaps. When a user initiates a swap, the protocol identifies the best available liquidity across various decentralized exchanges, ensuring optimal pricing for the transaction.<br><br><b>The Swap Process:</b><br>Initiation: A user specifies the tokens they wish to swap and the desired output asset.<br>Liquidity Aggregation: Jupiter Swap queries multiple liquidity sources to find the best rates for the desired swap.<br>Execution: Once the optimal route is determined, the swap is executed. The user's tokens are exchanged for the desired asset, and the transaction is completed on the respective blockchains.<br>Finalization: The user receives their new tokens in their wallet, concluding the transaction.<br><br><b>2. Liquidity Providers and Pools</b><br>Jupiter Swap incentivizes liquidity provision through its unique liquidity pools. Users can contribute to these pools by depositing assets, earning rewards in the form of transaction fees and liquidity tokens. This model not only enhances liquidity on the platform but also provides users with an opportunity to earn passive income.<br><br><b>3. User Interface and Experience</b><br>The user interface of Jupiter Swap is designed to be intuitive and straightforward. Users can easily navigate the platform, view available assets, and initiate swaps with just a few clicks. The platform also provides real-time data on market trends, helping users make informed trading decisions.<br><br><b>4. Governance and Community Involvement</b><br>Jupiter Swap emphasizes community governance, allowing users to participate in shaping the future of the platform. Token holders can propose changes, vote on key decisions, and influence the development roadmap. This democratic approach fosters a sense of ownership among users and encourages active participation.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Impact of Jupiter Swap on the DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhanced Liquidity</b><br>By aggregating liquidity from multiple sources and enabling cross-chain transactions, Jupiter Swap significantly enhances liquidity in the DeFi ecosystem. This increased liquidity benefits traders by providing better pricing and reducing slippage during transactions.<br><br><b>2. Improved Accessibility</b><br>Jupiter Swap democratizes access to a broader range of assets by allowing users to swap tokens across different blockchains. This accessibility encourages participation from a diverse user base, including those who may not have previously engaged with specific networks.<br><br><b>3. Fostering Interoperability</b><br>The ability to seamlessly swap assets between different blockchains promotes interoperability within the DeFi space. Jupiter Swap acts as a bridge between various ecosystems, facilitating collaboration and innovation across platforms.<br><br><b>4. Encouraging Innovation</b><br>By providing a robust infrastructure for cross-chain swaps, Jupiter Swap encourages developers to create new dApps and financial products. This innovation contributes to the overall growth and evolution of the DeFi landscape.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Security Risks</b><br>As with any DeFi platform, security is a paramount concern for Jupiter Swap. The complexity of cross-chain transactions increases the potential attack vectors, making it essential for the platform to implement robust security measures and conduct regular audits.<br><br><b>2. Regulatory Scrutiny</b><br>The DeFi space is under increasing regulatory scrutiny, and Jupiter Swap is no exception. As governments around the world seek to establish frameworks for cryptocurrency and DeFi, Jupiter Swap must navigate potential regulatory challenges that could impact its operations.<br><br><b>3. Market Volatility</b><br>The cryptocurrency market is notoriously volatile, and this volatility can affect the performance of Jupiter Swap. Users should be aware of the risks associated with trading in a fluctuating market and exercise caution when engaging in swaps.<br><br><b>4. Competition</b><br>The DeFi landscape is highly competitive, with numerous DEXs and platforms vying for user attention. Jupiter Swap must continually innovate and enhance its offerings to maintain its position in the market and attract new users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Jupiter Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Cross-Chain Capabilities</b><br>As the demand for cross-chain transactions grows, Jupiter Swap is likely to expand its capabilities to include more blockchain networks. This expansion will enhance the platform's utility and attract a broader user base.<br><br><b>2. Enhancements in User Experience</b><br>User experience will continue to be a focus for Jupiter Swap. The platform may introduce new features, such as advanced trading tools, analytics, and educational resources, to empower users and improve their trading experiences.<br><br><b>3. Strengthening Security Measures</b><br>With security being a top priority, Jupiter Swap will likely invest in advanced security protocols and conduct regular audits to protect user assets and maintain trust within the community.<br><br><b>4. Community Engagement and Governance</b><br>Jupiter Swap’s commitment to community governance will remain a cornerstone of its strategy. The platform may explore new ways to engage users, such as governance tokens, community events, and feedback mechanisms, to foster a vibrant and active user base.<br><br><b>5. Integration with Traditional Finance</b><br>As the DeFi space continues to mature, Jupiter Swap may explore partnerships with traditional financial institutions to bridge the gap between DeFi and traditional finance. This integration could unlock new opportunities for users and enhance the overall legitimacy of the platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Jupiter Swap Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  To keep you informed about the progress of your delivery, we\n                  provide shipment tracking for most orders. Once your order is\n                  shipped, you will receive a confirmation email with a tracking\n                  number and instructions on how to track your package. This\n                  allows you to monitor the status of your shipment and estimate\n                  its arrival.\n                </p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Jupiter Swap is a pioneering force in the DeFi landscape, providing users with a powerful platform for cross-chain asset swaps. By leveraging the strengths of the Solana blockchain, Jupiter Swap enhances liquidity, accessibility, and interoperability within the decentralized finance ecosystem.<br><br>As the DeFi space continues to evolve, Jupiter Swap is poised to play a significant role in shaping the future of cross-chain transactions. With its user-centric approach, commitment to community engagement, and focus on innovation, Jupiter Swap is set to revolutionize the way users interact with multiple blockchain networks.<br><br>In a world increasingly driven by digital assets and decentralized finance, Jupiter Swap stands as a testament to the potential of technology to create seamless solutions for users. Whether you are a seasoned DeFi trader or a newcomer exploring the world of cryptocurrencies, Jupiter Swap offers a compelling gateway to the future of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "utOyfUZNYo",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
